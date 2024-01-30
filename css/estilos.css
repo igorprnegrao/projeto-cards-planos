@@ -17,5 +17,35 @@ body {
 }
 
 .header {
-    
+    display: flex;
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+
+}
+
+.header__nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.header__nav a{
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.header__nav--active a {
+    background-color: #cbe300;
+    color: #0c1014;
 }
