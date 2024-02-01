@@ -56,7 +56,7 @@ body {
 .header__nav--active a{
     background-color: #cbe300;
     color: #0c1014;
-    pointer-events: none;  /*o evento nàpo ser clicado */
+    pointer-events: none;  /*o evento não pode ser clicado */
     
 }
 
@@ -77,6 +77,8 @@ body {
     padding: 16px;
     border-radius: 6px;
     box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
 }
 
 .class-plan__title {
@@ -92,4 +94,34 @@ body {
 
 .price-plan__price {
     font-size: 34px;
+}
+
+.price-plan__features {
+    margin: 0 0 35px 0;
+    color: #b5b5b5 ;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.price-plan__features li::marker {
+    color: #cbe300;
+}
+
+.pricing-plan__cta {
+    text-decoration: none;
+    color: #0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.pricing-plan__cta:hover {
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: #fff;
 }
